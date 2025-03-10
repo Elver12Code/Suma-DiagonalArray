@@ -4,7 +4,7 @@ using namespace std;
 void llenarMatriz(int matriz[][10], int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            cout << "Ingresa el elemento [" << i << "][" << j << "]: ";
+            cout << "Ingresa los datos [" << i << "][" << j << "]: ";
             cin >> matriz[i][j];
         }
     }
@@ -22,7 +22,7 @@ int sumaDiagonales(int matriz[][10], int n) {
 int main() {
     const int MAX = 10;
     int n;
-    cout << "Ingresa el tamano de la matriz (max 10): ";
+    cout << "Ingresa el tamaño de la matriz (max 10): ";
     cin >> n;
     int matriz[MAX][MAX];
     llenarMatriz(matriz, n);
